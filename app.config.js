@@ -1,0 +1,43 @@
+export default {
+  expo: {
+    name: "Keynan SecurePhoto",
+    slug: "keynan-securephoto",
+    version: "1.0.0",
+    sdkVersion: "51.0.0",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    userInterfaceStyle: "automatic",
+    splash: {
+      image: "./assets/splash.png",
+      resizeMode: "contain",
+      backgroundColor: "#0B0E14"
+    },
+    assetBundlePatterns: ["**/*"],
+    ios: {
+      supportsTablet: true,
+      infoPlist: {
+        NSFaceIDUsageDescription: "Allow Keynan SecurePhoto to use Face ID to unlock your vault"
+      }
+    },
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./assets/adaptive-icon.png",
+        backgroundColor: "#0B0E14"
+      },
+      package: "com.furaash.keynansecurephoto",
+      permissions: ["USE_BIOMETRIC", "USE_FINGERPRINT"]
+    },
+    web: {
+      favicon: "./assets/favicon.png"
+    },
+    plugins: [
+      "expo-local-authentication",
+      "expo-blur"
+    ],
+    extra: {
+      eas: {
+        projectId: "bcb86ec7-8ca4-49b3-80fb-aff055d4972b"
+      }
+    }
+  }
+}
