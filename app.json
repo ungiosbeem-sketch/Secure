@@ -3,6 +3,7 @@
     "name": "Keynan SecurePhoto",
     "slug": "keynan-securephoto",
     "version": "1.0.0",
+    "sdkVersion": "51.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -24,7 +25,13 @@
         "backgroundColor": "#0B0E14"
       },
       "package": "com.furaash.keynansecurephoto",
-      "permissions": ["USE_BIOMETRIC", "USE_FINGERPRINT"]
+      "permissions": [
+        "USE_BIOMETRIC", 
+        "USE_FINGERPRINT"
+      ],
+      "minSdkVersion": 23,
+      "compileSdkVersion": 34,
+      "targetSdkVersion": 34
     },
     "web": {
       "favicon": "./assets/favicon.png"
