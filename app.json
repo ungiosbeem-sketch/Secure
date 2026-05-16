@@ -23,7 +23,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0B0E14"
       },
-      "package": "com.furaash.keynan",
+      "package": "com.furaash.keynansecurephoto",
       "permissions": ["USE_BIOMETRIC", "USE_FINGERPRINT"]
     },
     "web": {
@@ -32,6 +32,11 @@
     "plugins": [
       "expo-local-authentication",
       "expo-blur"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bcb86ec7-8ca4-49b3-80fb-aff055d4972b"
+      }
+    }
   }
 }
